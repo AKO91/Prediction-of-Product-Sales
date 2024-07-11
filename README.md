@@ -23,9 +23,11 @@ Both the above illustrations toghether indicate that small and medium sized "Typ
 In addition, when plotting features against each other, there were some observations that could help with our predictions. 
 
 One observation was in the plot below, which shows that supermarkets of all types, generally have significantly higher sales that grocery stores. 
+
 ![image](https://github.com/AKO91/Prediction-of-Product-Sales/assets/170138532/b2e35a6c-065e-4f0a-bd1c-1bbc52b6cca6)
 
 Another potentially useful predicting feature found is the item's maximum retail price (MRP), which correlates moderately with the item outlet sales as shown below. 
+
 ![image](https://github.com/AKO91/Prediction-of-Product-Sales/assets/170138532/0f53d7e6-0883-45d3-b6d7-aded87556dc3)
 
 In the fourth section, pipelines were created to impute any missing values, encode any categorical cloumns, and scale numerical values. In addition, the dataset was split randomly into two groups; %75 of the data was used to train the prediction models in the upcoming section, and %25 of the data was set aside to test the validy of the models. 
