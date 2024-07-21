@@ -36,6 +36,8 @@ In the final section, the Linear Regression and Random Forest models from Scikit
 The R-squared metric of the best chosen model is 0.611 on the training data and 0.603 on the test data. This means that the model can predict results with approximately %60 accuracy.
 When looking at the mean absolute error of the model's training and test data, we can see an absolute error averge of about 750, which is a large error margain considering the average of the target column (Item outlet sales) is 2181. However, it still remains the best model of the options available, as the Linear Regression model has absolute error averge of over 800 and the default Random Forests model has absolute error averge of approximately 765 on the test data. This metric is significant when looking at ther performance of the model, since it gives the number of discripency in item sales perdicted for each outlet when using the model to predict. 
 
+After evaluating the predictions made by the model, we can look at the features that most influenced these predictions. In regard to the Linear Regression model, it should that how features affected the prediction of the sales for each outlet. 
+
 Overall, after cleaning and visualizing the data and training models on it, the best result achieved is to predict item outlet sales with %60, whcih is helpful but not significant. If more data is available and more prediction models are trialed, prediction accuracy can be improved. 
 
 
