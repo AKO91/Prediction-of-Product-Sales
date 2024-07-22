@@ -36,9 +36,24 @@ In the final section, the Linear Regression and Random Forest models from Scikit
 The R-squared metric of the best chosen model is 0.611 on the training data and 0.603 on the test data. This means that the model can predict results with approximately %60 accuracy.
 When looking at the mean absolute error of the model's training and test data, we can see an absolute error averge of about 750, which is a large error margain considering the average of the target column (Item outlet sales) is 2181. However, it still remains the best model of the options available, as the Linear Regression model has absolute error averge of over 800 and the default Random Forests model has absolute error averge of approximately 765 on the test data. This metric is significant when looking at ther performance of the model, since it gives the number of discripency in item sales perdicted for each outlet when using the model to predict. 
 
-After evaluating the predictions made by the model, we can look at the features that most influenced these predictions. In regard to the Linear Regression model, it should that how features affected the prediction of the sales for each outlet. 
-
 Overall, after cleaning and visualizing the data and training models on it, the best result achieved is to predict item outlet sales with %60, whcih is helpful but not significant. If more data is available and more prediction models are trialed, prediction accuracy can be improved. 
+
+# Model Importances 
+After evaluating the predictions made by the model, we can look at the features that most influenced these predictions. In regard to the Linear Regression model, it should that how features affected the prediction of the sales for each outlet. 
+The following graph shows the top five coeffecients of the model: 
+![Lin_Reg_Coeffecients](https://github.com/user-attachments/assets/4a016f89-79da-4b24-bfc5-86e7246d48ca)
+The graph shows that the Type 3 Supermarket has the biggest effect on sales as it increases sales by approximately 1,815, while the outlet establishment year of 1998 leads to a decrease in sale of about 1,550. 
+Meanwhile other establishment years including 1997 and 2004 lead to an increase of about 795 and 425 respecitvley. Finally, the graph shows that having a supermarket type one increases the outlet sales by about 1,078. 
+
+Random Forest model 
+![RF_Coeffecients](https://github.com/user-attachments/assets/370cc567-9d6e-4c7b-8998-d613369c95c2)
+When looking at the regular importances and permutation importances of the model, it shows that the Item maximum retail price is the most important feature in both. It also shows the same other importances in both with supermarket types and the establishment year of 1999 also have a significant degree of effect on the model. 
+
+# Recommendations 
+Looking at the models efficacy in predictions and the most important features for the predictions, it is recommended that that more data is collected particularly on the types of outlet, and the year of establishment. 
+It is also recommended that other features such as the type of items sold be reduced to decrease noise in the data. 
+
+
 
 
 
